@@ -33,5 +33,17 @@
 			document.querySelector("input#emailDOS").value = "landgraf.paul@gmail.com";
 			document.querySelector("[value='Siguiente']").click();
 		break;
+		case "https://sede.administracionespublicas.gob.es/icpplustie/controlador?accion=AC_OFERTARCITA":
+			document.querySelectorAll(".tablasinfondo input[type=radio]")[0].click();
+			document.querySelector("[value='Siguiente']").click();
+		break;
+		case "https://sede.administracionespublicas.gob.es/icpplustie/controlador?accion=AC_VERIFICARCITA":
+			document.querySelector("[name='chkTotal']").click();
+			document.querySelector("[name='enviarCorreo']").click();
+			document.querySelector("[value='Confirmar']").click();
+		break;
+		case "https://sede.administracionespublicas.gob.es/icpplustie/controlador?accion=AC_GRABARCITA":
+				
+		break;
 	}
 })();
