@@ -13,9 +13,9 @@
 			document.querySelector("[value='ENTRAR']").click();	
 		break;
 		case "https://sede.administracionespublicas.gob.es/icpplustie/citar?accion=ac_entrada":
-			document.querySelector("input#txtNieAux").value = "713859218";
-			document.querySelector("input#txtDesCitado").value = "Pavel Nekrasov";
-			document.querySelector("input#txtAnnoCitado").value = "1984";
+			document.querySelector("input#txtNieAux").value = __data__.id;
+			document.querySelector("input#txtDesCitado").value = __data__.name;
+			document.querySelector("input#txtAnnoCitado").value = __data__.age;
 			document.querySelector("select#txtPaisNac").value = "RUSIA";
 			document.querySelector("input#txtCaptcha").focus();
 		break;
@@ -28,9 +28,9 @@
 			document.querySelector("[value='Siguiente']").click();
 		break;
 		case "https://sede.administracionespublicas.gob.es/icpplustie/controlador?accion=AC_VERFORMULARIO":
-			document.querySelector("input#txtTelefonoCitado").value = "664229801";
-			document.querySelector("input#emailUNO").value = "landgraf.paul@gmail.com";
-			document.querySelector("input#emailDOS").value = "landgraf.paul@gmail.com";
+			document.querySelector("input#txtTelefonoCitado").value = __data__.phone;
+			document.querySelector("input#emailUNO").value = __data__.email;
+			document.querySelector("input#emailDOS").value = __data__.email;
 			document.querySelector("[value='Siguiente']").click();
 		break;
 		case "https://sede.administracionespublicas.gob.es/icpplustie/controlador?accion=AC_OFERTARCITA":
