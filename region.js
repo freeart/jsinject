@@ -24,8 +24,13 @@
 			document.querySelector("[value='SOLICITAR CITA']").click();
 		break;	
 		case "https://sede.administracionespublicas.gob.es/icpplustie/controlador?accion=AC_CITAR":
-			document.querySelector("select#txtIdSede").value = "5";		
+			document.querySelector("select#txtIdSede").value = "5";
 		break;
-		
+		case "":
+			document.querySelector("input#txtTelefonoCitado").value = "664229801";
+			document.querySelector("input#emailUNO").value = "landgraf.paul@gmail.com";
+			document.querySelector("input#emailDOS").value = "landgraf.paul@gmail.com";
+			document.querySelector("[value='Siguiente']").click();
+		break;
 	}
 })();
