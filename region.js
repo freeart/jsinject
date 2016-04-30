@@ -25,8 +25,9 @@
 		break;	
 		case "https://sede.administracionespublicas.gob.es/icpplustie/controlador?accion=AC_CITAR":
 			document.querySelector("select#txtIdSede").value = "5";
+			document.querySelector("[value='Siguiente']").click();
 		break;
-		case "":
+		case "https://sede.administracionespublicas.gob.es/icpplustie/controlador?accion=AC_VERFORMULARIO":
 			document.querySelector("input#txtTelefonoCitado").value = "664229801";
 			document.querySelector("input#emailUNO").value = "landgraf.paul@gmail.com";
 			document.querySelector("input#emailDOS").value = "landgraf.paul@gmail.com";
