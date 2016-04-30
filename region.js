@@ -17,7 +17,6 @@
 			document.querySelector("input#txtDesCitado").value = "Pavel Nekrasov";
 			document.querySelector("input#txtAnnoCitado").value = "1984";
 			document.querySelector("select#txtPaisNac").value = "RUSIA";
-			regenerate();
 			document.querySelector("input#txtCaptcha").focus();
 		break;
 		case "https://sede.administracionespublicas.gob.es/icpplustie/controlador?accion=ac_validarentrada":
