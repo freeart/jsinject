@@ -18,6 +18,7 @@
 			document.querySelector("input#txtAnnoCitado").value = "1984";
 			document.querySelector("select#txtPaisNac").value = "RUSIA";
 			document.querySelector("input#txtCaptcha").focus();
+			//FIX
 		break;
 		case "https://sede.administracionespublicas.gob.es/icpplustie/controlador?accion=ac_validarentrada":
 			document.querySelector("[value='SOLICITAR CITA']").click();
