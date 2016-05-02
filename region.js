@@ -13,6 +13,9 @@
 			document.querySelector("[value='ENTRAR']").click();	
 		break;
 		case "https://sede.administracionespublicas.gob.es/icpplustie/citar?accion=ac_entrada":
+			if (document.querySelector("input#txtCaptcha").value){
+				return document.querySelector("[value='Aceptar']").click();
+			}
 			document.querySelector("input#txtNieAux").value = __data__.id;
 			document.querySelector("input#txtDesCitado").value = __data__.name;
 			document.querySelector("input#txtAnnoCitado").value = __data__.age;
